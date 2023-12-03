@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-03T12:15:40 GMT" name="Default suite" finished-at="2023-12-03T12:15:58 GMT" duration-ms="18300">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Samplerunner@1b1426f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-03T12:15:40 GMT" name="Default test" finished-at="2023-12-03T12:15:58 GMT" duration-ms="18300">
+      <class name="runner.Samplerunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Samplerunner@1b1426f4]" started-at="2023-12-03T12:15:40 GMT" name="setUpClass" finished-at="2023-12-03T12:15:41 GMT" duration-ms="844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60e9c3a5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Samplerunner@1b1426f4]" started-at="2023-12-03T12:15:41 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-03T12:15:48 GMT" duration-ms="7153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Java Tutorial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Samplerunner@1b1426f4]" started-at="2023-12-03T12:15:48 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-03T12:15:53 GMT" duration-ms="5385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Selenium Tutorial"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Page Search Function"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Samplerunner@1b1426f4]" started-at="2023-12-03T12:15:53 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-03T12:15:58 GMT" duration-ms="4763" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Login Function"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Congratulations student. You successfully logged in!] but found [[[ChromeDriver: chrome on windows (904baa28ccda6c57b9845288f67b81f1)] -> xpath: //strong]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Congratulations student. You successfully logged in!] but found [[[ChromeDriver: chrome on windows (904baa28ccda6c57b9845288f67b81f1)] -> xpath: //strong]]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:617)
+at stepDef.UserLogin.should_display_home_page(UserLogin.java:33)
+at ✽.Should display Home page(file:///C:/Users/Administrator/eclipse-workspace/BDD/src/test/resources/features/Userlogin.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Samplerunner@1b1426f4]" started-at="2023-12-03T12:15:58 GMT" name="tearDownClass" finished-at="2023-12-03T12:15:58 GMT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.Samplerunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
